@@ -86,7 +86,7 @@ html, body {
 }
 
 
-#list #a1 #one, #two, #three, #four{
+#a1, #two, #three, #four{
     width: 360px;
     height: 360px;
     background: deeppink;
@@ -100,9 +100,9 @@ html, body {
     /*transition: 1s;*/
     /*-webkit-transition: 1s;*/
 /*}*/
-#list #a1 #one{
+ #a1{
     /*overflow: hidden;*/
-position: absolute;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
