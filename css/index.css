@@ -227,7 +227,6 @@ html, body {
 #list #a3 .message1 span{
     display: block;
     width: 10%;
-    height: 30%;
     position: absolute;
     top: 10%;
     left: 10%;
@@ -313,7 +312,6 @@ html, body {
 #list #a4 .message2 span{
     display: block;
     width: 10%;
-    height: 30%;
     position: absolute;
     top: 10%;
     left: 10%;
