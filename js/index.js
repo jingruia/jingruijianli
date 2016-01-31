@@ -15,9 +15,12 @@ if(winW/winH<desW/desH){
     oLi.addEventListener("touchstart",start,false);
     oLi.addEventListener("touchmove",move,false);
     oLi.addEventListener("touchend",end,false);
-})
+});
+
 function start(e){
+
     this.startY = e.changedTouches[0].pageY;
+
 }
 function move(e){
     this.flag = true;
@@ -63,3 +66,25 @@ function end(e){
 document.addEventListener("touchmove",function(e){
     console.log(e.target.id);
 },false)
+
+
+function getEle(ele) {
+    return document.querySelector(ele);
+}
+var mus=getEle("#head");
+var music=getEle("#music");
+var head=getEle(".head");
+var flagM=true;
+music.play();
+mus.onclick=function(){
+    if(flagM){
+        music.pause();
+        flagM=false;
+        head.id="";
+    }
+    else{
+        music.play();
+        head.id="head";
+        flagM=true;
+    }
+};
